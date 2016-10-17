@@ -1,7 +1,7 @@
 angular
   .module('app')
   .component('app', {
-    templateUrl: 'app/youtubevideoplayer.html',
+    templateUrl: 'app/views/youtubevideoplayer.html',
     controller: function videoController ($scope) {
 
       /**
