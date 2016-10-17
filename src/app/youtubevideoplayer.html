@@ -4,13 +4,16 @@
 </head>
 <body>
 <div>
+  <p>Enter YouTube URL here</p>
+  <input type="text" id="urlText" ng-model="urlText" />
+  <button id="loadVidButton" ng-click="loadVideo()">Load video</button>
   <video
     id="vid1"
     class="video-js vjs-default-skin"
     controls
     poster=""
     width="710" height="400"
-    data-setup={{dataSetup}}
+    data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": ""}] }'
   >
   </video>
 </div>
