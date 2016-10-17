@@ -1,38 +1,46 @@
-#bodyDiv {
+/*Main div containing all content*/
+#mainDiv {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-#bodyDiv p {
+/*Text to enter youtube url*/
+#mainDiv p {
   margin-top: 50px;
 }
 
+/*Input field for youtube url*/
+#mainDiv input {
+  width: 710px;
+  height: 30px;
+  margin: 20px;
+}
+
+/*Load Video Button*/
 #loadVidButton {
   margin: 20px 0 50px 0;
   padding: 10px;
   cursor: pointer;
 }
 
-#bodyDiv input {
-  width: 710px;
-  height: 30px;
-  margin: 20px;
-}
-
+/*Video.js player*/
 .video-js {
   display: inline-block;
 }
 
+/*Disable click events on player while playing*/
 .video-js.vjs-playing .vjs-tech {
   pointer-events: none;
 }
 
+/*Disable click events on player while paused or not playing*/
 .video-js .vjs-tech {
   pointer-events: none;
 }
 
+/*Player play button*/
 .video-js .vjs-big-play-button {
   top: 160px;
   left: 310px;

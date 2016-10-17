@@ -1,26 +1,55 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+
+  <meta charset="UTF-8">
+
+  <!--Load video.js styles-->
   <link rel="stylesheet" href="../../bower_components/video.js/dist/video-js.min.css" />
+
+  <!--Load custom styles for webpage-->
   <link rel="stylesheet" href="../app/youtubevideoplayer.css" />
+
 </head>
+
 <body>
-<div id="bodyDiv">
-  <p>Enter YouTube URL here</p>
-  <input type="text" id="urlText" ng-model="urlText" />
-  <button id="loadVidButton" ng-click="loadVideo()">Load video</button>
-  <video
-    id="vid1"
-    class="video-js vjs-default-skin"
-    controls
-    poster=""
-    width="710" height="400"
-    data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": ""}] }'
-  >
-  </video>
-</div>
+
+  <!--Main div containing all content-->
+  <div id="mainDiv">
+
+    <!--Take youtube url from user-->
+    <p>Enter YouTube URL here</p>
+    <input type="text" id="urlText" ng-model="urlText" />
+
+    <!--Button to initialize video.js player and load the video-->
+    <button id="loadVidButton" ng-click="loadVideo()">Load video</button>
+
+    <!--The video to be played-->
+    <video
+      id="vid1"
+      class="video-js vjs-default-skin"
+      controls
+      poster=""
+      width="710" height="400"
+      data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": ""}] }'
+    >
+    </video>
+
+  </div>
+  <!--/End main div-->
+
 </body>
+
+<!--Script to load video.js framework-->
 <script src="../../bower_components/video.js/dist/video.min.js"></script>
+
+<!--Script to load the vjs-video angular directive for video.js-->
 <script src="../../bower_components/vjs-video/dist/vjs-video.min.js"></script>
+
+<!--Script to load plugin for Youtube playback technology-->
 <script src="../plugins/Youtube.min.js"></script>
+
+<!--Script to load hotkeys plugin-->
 <script src="../plugins/hotkeys.min.js"></script>
+
 </html>
