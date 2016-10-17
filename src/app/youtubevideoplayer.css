@@ -1,0 +1,39 @@
+#bodyDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#bodyDiv p {
+  margin-top: 50px;
+}
+
+#loadVidButton {
+  margin: 20px 0 50px 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#bodyDiv input {
+  width: 710px;
+  height: 30px;
+  margin: 20px;
+}
+
+.video-js {
+  display: inline-block;
+}
+
+.video-js.vjs-playing .vjs-tech {
+  pointer-events: none;
+}
+
+.video-js .vjs-tech {
+  pointer-events: none;
+}
+
+.video-js .vjs-big-play-button {
+  top: 160px;
+  left: 310px;
+}
