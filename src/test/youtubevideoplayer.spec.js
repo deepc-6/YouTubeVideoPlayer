@@ -6,12 +6,12 @@ describe('component: app', function () {
       };
     });
   }));
-  beforeEach(angular.mock.inject(function(_$componentController_) {
+  beforeEach(angular.mock.inject(function (_$componentController_) {
     $componentController = _$componentController_;
   }));
   it('loadVideo function should be called', function () {
     var $scope = {};
-    var controller = $componentController('app', { $scope: $scope });
+    var controller = $componentController('app', {$scope: $scope});
     spyOn($scope, 'loadVideo');
     $scope.loadVideo();
     expect($scope.loadVideo).toHaveBeenCalled();
